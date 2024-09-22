@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Change Here
+SSH_KEY="ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQChvSNnrbBn/hXVszW56gfxGf/zKlL4/lHcgPIEkVsgWkbAMnQyzBm2F5Cf0+nFB5sFAuUFVTpRQlCxRv0+E+stiVvkRPCGkMhUm/FmHT98TO2mZCsmo+vj3yg7iDi4n7mwW54vIi3P3quKXgNlUbIGx0V/99odsOQOaGr+kwmSlr6vmNpMCOZ7Xfait08CAHCkc/tpinuCNXu3WxMQnhZVKAAEyAEqu82fOMnx0dksu5Mjgs4yQO34uYhRjEFybEp6lUodCmapFaWOJhm1Qy5hyFxtATlUpB7HVZYkIgVB93Y3x8JoIDHmk1UBhrzMDLZfRuN0fGSgfwh/MyCDD9bxHnSvItnj0wjhbZBDAcelEzhezR2WZNllLmCksMzPftYOQ5u4LoTnJsPOojwELSkZ2uZBFanSUp35uIxB3RKK73jvYG9WWGTgWvzibNr4fbzazC88dBu5UZx5aVhW27W651Dr0nPaTHrvnCghwAqfO4bFa8RAink5jKCkdCqMgCsqOZbDMnAIqVINHcdM4/LUFk/G++XP0Ble4njLe9PfoIXL9AN20oHuk1/7Jdt/eonZWPZHDvReQqapfybwYNZHqeLVPqc4qq9ZcB/"
+
+
+mkdir -p ~/.ssh
+echo "$SSH_KEY" >> ~/.ssh/authorized_keys
+
+
+chmod 700 ~/.ssh
+chmod 600 ~/.ssh/authorized_keys
+
+echo "SSH key installed successfully."
